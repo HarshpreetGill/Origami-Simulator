@@ -29,6 +29,7 @@
     </script>
 
     <!-- defines vesterx shader in glsl(open gl shading lang) shader takes 2d attribute -->
+    
     <script id="vertexShader" type="x-shader/x-vertex">
         attribute vec2 a_position;
         void main() {
@@ -44,6 +45,7 @@
     four bytes using encode_float fxn -->
 
     <!-- the resulting encoded values are then outputted as the fragment color -->
+    <!-- floor() rounds off the value  -->
     <script id="packToBytesShader" type="x-shader/x-fragment">
         precision mediump float;
         uniform vec2 u_floatTextureDim;
@@ -978,7 +980,6 @@
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">View <b class="caret"></b></a>
                 <span class="dropdown-arrow"></span>
                 <ul class="dropdown-menu">
-                    <li><a id="changeBackground" href="#">Change Background Color...</a></li>
                     <li class="dropdown-submenu">
                         <a tabindex="-1">Rotate Model<span class="pull-right fui-arrow-right"></span></a>
                         <ul class="dropdown-menu">
