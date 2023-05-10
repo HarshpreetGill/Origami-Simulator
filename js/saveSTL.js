@@ -1,3 +1,7 @@
+/**
+ * Created by amandaghassaei on 5/2/17.
+ */
+
 function makeSaveGEO(doublesided){
     var geo = new THREE.Geometry().fromBufferGeometry( globals.model.getGeometry() );
 

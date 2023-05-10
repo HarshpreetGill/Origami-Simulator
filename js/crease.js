@@ -1,8 +1,8 @@
 /*
 a crease module is a feature that allows the user to create and edit crease patterns, which 
 are the set of folded lines that define the geometry of the final origami model.
- include tools for analyzing the geometry of the crease pattern, such as calculating the angles 
- between adjacent creases, and identifying any points where multiple creases intersect.
+include tools for analyzing the geometry of the crease pattern, such as calculating the angles 
+between adjacent creases, and identifying any points where multiple creases intersect.
 */
 
 function Crease(edge, face1Index, face2Index, targetTheta, type, node1, node2, index){

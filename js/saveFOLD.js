@@ -16,21 +16,7 @@ function saveFOLD(){
     var filename = $("#foldFilename").val();
     if (filename == "") filename = globals.filename;
 
-    var json = {
-        file_spec: 1.1,
-        file_creator: "Origami Simulator: http://git.amandaghassaei.com/OrigamiSimulator/",
-        file_author: $("#foldAuthor").val(),
-        file_classes: ["singleModel"],
-        frame_title: filename,
-        frame_classes: ["foldedForm"],
-        frame_attributes: ["3D"],
-        frame_unit: globals.foldUnits,
-        vertices_coords: [],
-        edges_vertices: [],
-        edges_assignment: [],
-        faces_vertices: []
-    };
-
+   
     for (var i=0;i<geo.vertices.length;i++){
         var vertex = geo.vertices[i];
         json.vertices_coords.push([vertex.x, vertex.y, vertex.z]);
